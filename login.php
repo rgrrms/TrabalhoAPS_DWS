@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="css/default.css">
     <link rel="stylesheet" type="text/css" href="css/login.css">
 </head>
 <body>
@@ -13,38 +14,38 @@
         <div class="header"><h1>LOGIN</h1></div>
         <div class="container">
             <div class="usuers">
-                <form class="login" method="post" enctype="multipart/form-data">
+                <form class="login" method="post" action="logar.php" enctype="multipart/form-data">
                     <h1 class="title">LOGAR</h1>
                     <div class="itens">
                         <label for="email">Email: </label>
-                        <input class="campos" type="text" id="email" maxlength="20" required>
+                        <input class="campos" type="text" name="email" id="email" maxlength="20" required>
                     </div>
                     <div class="itens">
-                        <label for="pass">Senha: </label>
-                        <input class="campos" type="password" id="pass" step="0.01" required>
+                        <label for="senha">Senha: </label>
+                        <input class="campos" type="password" name="senha" id="senha" step="0.01" required>
                     </div>
                     <div class="buttons">
                         <button id="login">Entra</button>
                     </div>
-                    <div class="buttons">
-                        <button id="creatAcount">Criar Conta!</button>
-                    </div>
                 </form>
+                <div class="buttons">
+                    <a href="cadastroClientes.php"><button id="creatAcount">Criar Conta!</button></a>
+                </div>
             </div>
             <div>
                 <hr>
             </div>
             <div class="admin">
                 <div class="usuers">
-                    <form class="loginAdmin" method="post" enctype="multipart/form-data">
+                    <form class="loginAdmin" method="post" action="logarAdmin.php" enctype="multipart/form-data">
                         <h1 class="title">ADMIM</h1>
                         <div class="itens">
                             <label for="emailAdmin">Email: </label>
-                            <input class="campos" type="text" id="emailAdmin" maxlength="20" required>
+                            <input class="campos" type="text" name="emailAdmin" id="emailAdmin" maxlength="20" required>
                         </div>
                         <div class="itens">
-                            <label for="passAdmin">Senha: </label>
-                            <input class="campos" type="password" id="passAdmin" step="0.01" required>
+                            <label for="senhaAdmin">Senha: </label>
+                            <input class="campos" type="password" name="senhaAdmin" id="senhaAdmin" required>
                         </div>
                         <div class="buttons">
                             <button id="loginAdmin">Entra</button>

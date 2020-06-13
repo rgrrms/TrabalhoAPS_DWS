@@ -1,0 +1,71 @@
+/* soft reset do css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #505050;
+    background-size: auto 100vh;
+    height: 100vh;
+    font-size: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 260px);
+    margin-left: 200px;
+}
+
+.produto {
+    background-color: red;
+    height: 240px;
+    width: 213px;
+    margin: 20px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+}
+
+.inf {
+    margin-top: 3px;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+img {
+    height: 180px;
+}
+
+.btn {
+
+}
+
+.btn button {
+    border-radius: 10px;
+    border: none;
+    color: #505050;
+    margin-top: 5px;
+    padding: 6px;
+    width: 100px;
+}
+
+.btn button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background: gray;
+}
+
+.carrinho {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    border-left: 1px solid #000;
+    padding: 20px;
+    background: lightgray;
+}

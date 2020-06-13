@@ -9,24 +9,32 @@
     <link rel="stylesheet" type="text/css" href="css/Produtos.css">
 </head>
 <body>
-    <div class="main">
-        <div class="header">
-            <h1>CADASTRO DE PRODUTOS</h1>
+    <div class="menus">
+        <div>
+            <button>Menu</button>
+            <!--<nav>
+                <button>Home</button>
+                <button>Cadastro de Usuarios</button>
+            </nav>-->
         </div>
-        <div class="container">
-            <form class="cadastro" method="post" enctype="multipart/form-data">
+        <div class="main">
+            <div class="header">
+                <h1>CADASTRO DE PRODUTOS</h1>
+            </div>
+            <div class="container">
+            <form class="cadastro" method="post" action="clsProduto.php" enctype="multipart/form-data">
                 <div class="itens">
                     <label for="nome">Produto: </label>
-                    <input class="campos" type="text" id="nome" maxlength="20" required>
+                    <input class="campos" type="text" name="nome" id="nome" maxlength="20" required>
                 </div>
                 <div class="itens">
                     <label for="preco">Preço: </label>
-                    <input class="campos" type="number" id="preco" step="0.01" required>
+                    <input class="campos" type="number" name="preco" id="preco" step="0.01" required>
                 </div>
                 <div class="itens">
                     <label for="qtde">Quantidade: </label>
-                    <input class="campos" type="number" id="qtde" required>
-                    <select class="campos" type="text" id="un" required>
+                    <input class="campos" type="number" name="quantidade" id="qtde" required>
+                    <select class="campos" type="text" name="tipo" id="un" required>
                         <option value="">Tipo</option>
                         <option value="a">UN</option>
                         <option value="b">KG</option>
@@ -35,11 +43,11 @@
                 </div>
                 <div class="itens">
                     <label for="validade">Data de validade: </label>
-                    <input class="campos" type="date" id="validade" required>
+                    <input class="campos" type="date" name="validade" id="validade" required>
                 </div>
                 <div class="itens">
                     <label for="categoria">Categoria: </label>
-                    <select class="campos" name="selecione" id="categoria" required>
+                    <select class="campos" name="categoria" id="categoria" required>
                         <option value="">Selecione...</option>
                         <option value="1">Bebidas</option>
                         <option value="2">Açougue</option>
@@ -55,18 +63,16 @@
                 </div>
                 <div class="itens">
                     <label for="foto">Foto</label>
-                    <input class="campos" type="file" id="foto" accept="image/png, image/jpeg" required>
+                    <input class="campos" type="file" name="foto" id="foto" accept="image/png, image/jpeg" required>
                 </div>
                 <div class="buttons">
                     <button id="limpar">Limpar</button>
                     <button id="cadastrar">Cadastrar</button>
                 </div>
-                <p class="obrigatorio"></p>
-                <p class="positivo"></p>
-                <p class="semana"></p>
             </form>
         </div>
+        </div>
+        <div><button>Sair</button></div>
     </div>
-    <script src="js/Produtos.js"></script>
 </body>
 </html>

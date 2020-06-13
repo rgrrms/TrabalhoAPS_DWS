@@ -1,0 +1,5 @@
+banco.sql
+*.jpg
+img*
+.idea
+clsConexao.php
